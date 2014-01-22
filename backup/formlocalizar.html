@@ -1,0 +1,33 @@
+<script type="text/javascript"   src="js/funcoes.js"></script>
+
+
+
+<h1 class="logomarca"><span class="d">Do</span>Ke<span class="prec">precisa?</span>	</h1><h5>O que voce procura pode esta bem perto!</h5>
+
+<form  action="?pg=localizando" method="post"  id="frm">
+		 Procure:
+        <select name="tipo" name="tipo">
+        								<option>----</option>
+        								<option value="1">profissional autonomo</option>
+                                        <option value="2">Estabelecimento</option>
+         </select>
+        <input type="text" name="localizar" id="localizar" size="40"/> 
+       <br/>
+       <div id="filtro" style="display:none;">
+          Estado<select name="estado" id="estado" value="" ></select>
+          Cidade <select  name="cidade" id="cidade" value="" ></select>
+         
+          
+         <br/>
+         
+         </div>
+         <a href="#" onclick="filtrar()">filtrar</a>
+               <input  type="submit" id="enviar" name="enviar" value="encontrar"/>
+         
+       
+       
+     
+		
+
+</form>
+

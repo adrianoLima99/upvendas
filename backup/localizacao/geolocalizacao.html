@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+ <div id="geoarea">
+<input type="button" value="Onde estou agora?" onclick="ExibirLocalizacao()" />
+</div>
+ 
+<script type="text/javascript">
+var area = document.getElementById("geoarea");
+ 
+function ExibirLocalizacao(){
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(ObterPosicao);
+}
+else{
+area.innerHTML = "Infelizmente este browser não suporta o recurso de geolocalização.";
+}
+}
+ 
+function ObterPosicao(posicao){
+area.innerHTML = "Latitude: " + posicao.coords.latitude + "<br /> Longitude: " + posicao.coords.longitude;
+}
+</script>
+
+
+
+</body>
+</html>

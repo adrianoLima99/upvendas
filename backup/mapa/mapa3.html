@@ -1,0 +1,59 @@
+<html>
+<head><title></title>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+var map = null; 
+function carregar(){
+    var latlng = new google.maps.LatLng(-5.089212, -42.801627);
+    var  initialLocation = new google.maps.LatLng(-5.089212, -42.801627);       
+    var myOptions = {
+            zoom: 12,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+         };
+         
+  
+   
+   
+/*  var praca = new google.maps.LatLng(-29.756200185902156, -57.08757859271242);
+marcadorPraca = new google.maps.Marker({
+  //  position: praca,
+    position: initialLocation,
+   map: map,
+   title:"aqui"
+});
+   
+   //criando o mapa
+ */ 
+   
+  // map = new google.maps.Map( document.getElementById("mapa") , myOptions );
+    map = new google.maps.Map(document.getElementById("mapa"), myOptions);
+            map.setCenter(initialLocation);
+ 
+            var marker = new google.maps.Marker({
+                position: initialLocation,
+                map: map,
+                title:"Você está aqui!"
+            });
+ 
+            var infowindow = new google.maps.InfoWindow({
+                content: 'Você está aqui!'
+            });
+ 
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map,marker);
+            });
+     
+   
+   
+   
+}
+</script>
+</head>
+<body onLoad="carregar()">
+<div id="mapa" style="width:300px;height:300px;">
+</div>
+
+
+</body>
+</html>

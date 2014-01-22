@@ -1,0 +1,31 @@
+Nesse artigo vou mostrar uma função em PHP que limita textos, ideal para quando precisamos exibir determinado número de caracteres de uma frase e colocar um "…"  no final.
+
+Função para Limitar Caracteres:
+<?php
+function limita_caracteres($texto, $limite, $quebra = true){
+   $tamanho = strlen($texto);
+   if($tamanho <= $limite){ //Verifica se o tamanho do texto é menor ou igual ao limite
+      $novo_texto = $texto;
+   }else{ // Se o tamanho do texto for maior que o limite
+      if($quebra == true){ // Verifica a opção de quebrar o texto
+         $novo_texto = trim(substr($texto, 0, $limite))."...";
+      }else{ // Se não, corta $texto na última palavra antes do limite
+         $ultimo_espaco = strrpos(substr($texto, 0, $limite), " "); // Localiza o útlimo espaço antes de $limite
+         $novo_texto = trim(substr($texto, 0, $ultimo_espaco))."..."; // Corta o $texto até a posição localizada
+      }
+   }
+   return $novo_texto; // Retorna o valor formatado
+}
+?>
+
+Pra usar essa função é bem simples, você só precisa definir dois dos três argumentos dela:
+<?php
+   echo limita_caracteres("Mensagem de teste para testar o script.", 10); // Resultado: Mensagem d...
+?>
+
+Você tambem pode setar a terceira opção em 'false':
+<?php
+   echo limita_caracteres("Mensagem de teste para testar o script.", 10, false); // Resultado: Mensagem...
+?>
+
+Leia mais em: Limitando Textos com PHP http://www.devmedia.com.br/limitando-textos-com-php/17405#ixzz21fkpSQ7Y

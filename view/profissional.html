@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" >
+<head>
+<meta  charset="utf-8" />
+<title>Cadastro do Profissional</title>
+</head>
+
+<body>
+
+   <section>
+	<header class="logomarca">
+	<figure>
+      <img src="imagens/logomarcamin.png" width="280" height="40" />
+             
+              
+    </figure>
+    
+    </header>
+<section>
+<fieldset>
+<legend>Faca parte de nossas consultas </legend>
+	         
+<table border="0">
+<tr><form action="?pg=cadProfissional" method="post">
+  <td> 	Nome:	</td><td>	<input type="text" name="nome" id="nome" required/></td>
+</tr>
+<tr>
+  <td>	Profiss&atilde;o		</td><td>	<input type="text"  name="prof" id="prof" required /> </td>
+</tr>
+<tr>
+  <td>	Fale sobre você:		</td><td>	<textarea  name="desc" id="desc" required rows="20" cols="30" ></textarea> </td>
+</tr>
+
+<tr>
+  <td>	Experiencia		</td><td>	<select name="exp" equired>
+  												 <option value="0">0</option>
+                                                 <option value="3">ate 3 </option>
+                                                 <option value="7">ate 7</option>
+                                                 <option value="10">ate 10</option>
+                                                 <option value="15">ate 15</option>
+                                                 <option value="20">mais de 20</option>
+                                            	</select> anos</td>
+</tr>
+
+
+<tr>
+  <td>	Endereco:			</td><td>	<input type="text" name="end" id="end" required/>				</td>
+</tr>
+  <tr>
+ <td>	Estado:				</td><td><select name="estado" id="estado" required/>	</select>			</td>
+</tr>
+<tr>
+ <td>	Cidade:				</td><td><select name="cidade" id="cidade" required/></select>					</td>
+</tr>
+<tr>
+<td>	Fone 1:				</td><td><input type="tel" name="fone" id="fone" pattern="\(\d\d\)\d\d\d\d\-\d\d\d\d" title="(xx)xxxx-xxxx" required/>					</td>
+</tr>
+<tr>
+<td>	Fone 2:				</td><td><input type="tel" name="fone2" id="fone2" pattern="\(\d\d\)\d\d\d\d\-\d\d\d\d" title="(xx)xxxx-xxxx" required/>					</td>
+</tr>
+<tr>
+<td>	Email:				</td><td><input type="email" name="email" id="email" />				</td>
+</tr>
+<tr>
+<td>	Site:				</td><td><input type="text" name="site" id="site"  />				</td>
+</tr>
+<tr>
+<td colspan="2">	
+		
+        <fieldset class="seguranca">
+        	<legend>Seguran&ccedil;a</legend>
+            	Login:<input type="text" name="usuario" id="usuario"  required /><br/>	
+                Senha:<input type="password" name="senha" id="senha" required /><br/>
+             repita Senha:<input type="password" name="confsenha" id="confsenha" required />
+         </fieldset>       			</td>
+</tr>
+
+
+<tr>
+
+<td></td>				<td>	<input type="submit" name="cadastro" value="cadastrar"/>	</td>
+</tr>
+</form>
+</table>
+</fieldset>
+
+<br/>
+<a href="?pg=home">Voltar</a>
+
+</body>
+</html>

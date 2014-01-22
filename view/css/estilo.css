@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ margin:0; padding:0; font-family:"Times New Roman", Times, serif;}
+li{list-style:none;}
+#geral
+{
+width:100%;
+height:100%;
+
+
+}
+#conteudo
+{
+ margin:0 auto;
+ padding:5px 6px ;
+ width:620px;
+ min-height:600px;
+ 
+}
+#filtro
+{
+ width:500px;
+ height:50px;
+ margin: 2px 2px 8px 2px;
+ padding: 10px 2px 2px 2px ;
+}
+#menu{ background:GhostWhite;height:50px;padding-top:10px;}
+
+.prec{ color:#99CC33;}
+.logomarca{font-family:Arial, Helvetica, sans-serif;}
+/*.incluir{margin-left:300px;text-decoration:none;}
+.incluir:hover{background-color:#CCCCCC;padding:3px 3px;}*/
+
+.plano{ margin-left:10px;text-decoration:none;}
+.plano:hover{background-color:#FFFFFF;padding:3px 3px;}
+.planoAnual{ width:198px;height:200px; background-color:#9999FF;padding:15px 10px 15px 30px;float:left;}
+.planoMensal{ width:210px;height:200px; background-color:#CCCC99;padding:15px 10px 15px 30px; float:right;}
+.plano1{ width:100px;height:30px; background-color:#00FF00; padding:10px 2px 1px 30px;}
+.plano1 a{text-decoration:none;}
+
+.plano1:hover{ background-color:#009933;}
+.plano2{ width:100px;height:30px; background-color:#00FF00;padding:10px 2px 1px 30px;}
+.plano2 a{text-decoration:none;}
+.plano2:hover{ background-color:#009933; }
+.logar{float:right;margin-right:500px;text-decoration:none;}
+.logar:hover{background-color:#CCCCCC;padding:1px 3px 1px 5px;}
+fieldset{ width:500px;}
+.seguranca{ width:400px;}
+/*menu
+*/
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; }
+* html ul li a { height: 1%; }
+/* End */
+#nav ul:hover{ background-color:#CCCCCC; cursor:pointer;}
+#menus{ width:800px;}
+#menus ul{ list-style:none;margin:0;padding:0; width:150px;height:30px;  }
+#menus ul li{ position:relative;}
+#menus li ul{ position:absolute;left:90px;top:0;display:none;}
+#menus ul li a{ display:block;text-decoration:none;color:#777;background:#fff;padding:5px;border:1px solid #ccc; border-bottom:0; }
+#menus li:hover ul, li.over ul{ display:block; }
+#menus ul li a:hover{ background-color:#CCCCCC;}

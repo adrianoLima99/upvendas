@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+.exclusao1{
+margin: 10px 3px;
+padding:5px 20px;
+width:150px;
+height:30px;
+float:left;
+background:#00CC33;
+}
+.exclusao1:hover{ background:#FFFFFF;border:#999999 1px solid; }
+.exclusao1 a{
+text-align:center;
+text-decoration:none;
+
+}
+
+.exclusao0{
+margin: 10px 3px;
+padding:5px 20px;
+width:100px;
+height:30px;
+float:left;
+background:#FFFF33;
+  
+}
+.exclusao0 a{
+text-align:center;
+text-decoration:none;
+
+}
+.exclusao0:hover{ background:#FFFFFF;border:#999999 1px solid; }
+.exclusao0 a{
+text-align:center;
+text-decoration:none;
+
+}
+
